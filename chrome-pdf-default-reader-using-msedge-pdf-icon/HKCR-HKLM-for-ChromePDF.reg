@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+
+;; HKCR set up the ProgID "ChromeDPF" which will replace "ChromeHTML" for pdf
+[HKEY_CLASSES_ROOT\.pdf]
+@="ChromePDF"
+"Content Type"="application/pdf"
+
+[HKEY_CLASSES_ROOT\.pdf\OpenWithProgids]
+"ChromePDF"=""
+
+;; HKCR settings for "ChromePDF" using the PDF icon within the msedge.exe file
+[HKEY_CLASSES_ROOT\ChromePDF]
+@="PDF (opened with Chrome)"
+
+[HKEY_CLASSES_ROOT\ChromePDF\DefaultIcon]
+@="C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",13"
+
+[HKEY_CLASSES_ROOT\ChromePDF\shell]
+
+[HKEY_CLASSES_ROOT\ChromePDF\shell\open]
+@="Open"
+
+[HKEY_CLASSES_ROOT\ChromePDF\shell\open\command]
+@="\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --single-argument %1"
+
+;; HKLM and HKCU - Set the .pdf file association to use the "ChromePDF" ProdID
+[HKEY_LOCAL_MACHINE\Software\Clients\StartMenuInternet\Google Chrome\Capabilities\FileAssociations]
+".pdf"="ChromePDF"
+
+[HKEY_CURRENT_USER\Software\Clients\StartMenuInternet\Google Chrome\Capabilities\FileAssociations]
+".pdf"="ChromePDF"
