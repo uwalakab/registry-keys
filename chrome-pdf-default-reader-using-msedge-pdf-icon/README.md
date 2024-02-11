@@ -5,4 +5,4 @@ The registry key file in this repository assumes you have the Edge browser insta
 
 Of course your choice of icon file is governed by the file path on [this line in the registry file.](HKCR-HKLM-for-ChromePDF.reg#L17)
 
-In this example the icon number 13 from the `msedge.exe` file is being used.
+In this example, the icon number 13 embedded in the `msedge.exe` file is being used.
