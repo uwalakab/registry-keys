@@ -1,5 +1,5 @@
 # Setting a PDF icon when Chrome Browser is the default for PDF file type on Windows 11
-On Windows 11 when you make your Chrome Browser the default app for opening PDF files, it initially causes all your PDF files to have the Chrome Browser icon in File Explorer.
+On Windows 11 when you make your Chrome Browser the default app for opening PDF files, it initially causes all your PDF files to show the Chrome Browser icon in File Explorer.
 
 The registry key file in this repository assumes you have the Edge browser installed and uses the natively embedded PDF icon from the Microsoft Edge browser `msedge.exe` file. The Chrome Browser exe file doesn't appear to have an embedded PDF icon (yet?).
 
