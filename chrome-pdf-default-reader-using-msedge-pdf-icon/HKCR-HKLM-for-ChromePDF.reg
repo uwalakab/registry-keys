@@ -14,7 +14,8 @@ Windows Registry Editor Version 5.00
 
 ;; HKCR setting to refer to the msedge (32-bit) for its PDF icon
 [HKEY_CLASSES_ROOT\ChromePDF\DefaultIcon]
-@="C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",13"
+;; Icon index changed from 13 to 11 - @="C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",13"
+@="C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",11"
 
 [HKEY_CLASSES_ROOT\ChromePDF\shell]
 
