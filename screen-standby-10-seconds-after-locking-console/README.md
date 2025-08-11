@@ -8,7 +8,7 @@ powercfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOCONLOCK 10
 powercfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOIDLE 900
 powercfg.exe /setdcvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOCONLOCK 10
 powercfg.exe /setdcvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOIDLE 600
-powercfg.exe /setactive SCHEME_CURREN
+powercfg.exe /setactive SCHEME_CURRENT
 ```
 ## Reference links
 Windows lock screen power save - BEST ONE use powercfg.exe command like in the example above<br>
