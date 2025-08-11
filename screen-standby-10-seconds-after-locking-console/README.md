@@ -1,7 +1,7 @@
 # Windows Screen Lock Registry hacks
 Below example - The screen automatically goes into Standby mode 10 seconds after locking the Windows console.<br>
-Note that setting needs to be done for both the Power and Battery settings, (i.e. `setacvalueindex` and `setdcvalueindex` respectively)
-Also the VIDEOIDLE setting needs to be 
+Note that setting needs to be done for both the Power and Battery settings, (i.e. `setacvalueindex` and `setdcvalueindex` respectively)<br>
+Also the VIDEOIDLE setting needs to have a value greater than ZERO. I use 900 seconds for AC and 600 seconds for DC.
 
 ```
 powercfg.exe /setacvalueindex SCHEME_CURRENT SUB_VIDEO VIDEOCONLOCK 10
